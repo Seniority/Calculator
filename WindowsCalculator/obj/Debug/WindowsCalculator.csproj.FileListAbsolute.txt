@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\bin\Debug\WindowsCalculator.exe.config
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\bin\Debug\WindowsCalculator.exe
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\bin\Debug\WindowsCalculator.pdb
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.Form1.resources
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.Properties.Resources.resources
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.exe
+C:\Users\User\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.pdb
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.pdb
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\bin\Debug\WindowsCalculator.exe
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\bin\Debug\WindowsCalculator.pdb
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.Form1.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.Properties.Resources.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.csproj.GenerateResource.Cache
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.exe
