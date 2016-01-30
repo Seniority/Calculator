@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsCalculator
 {
+    /// <summary>
+    /// Calculator app by Anthony Senior.
+    /// Created 12.8.2015
+    /// </summary>
+    
     public partial class Form1 : Form
     {
         double value = 0;
