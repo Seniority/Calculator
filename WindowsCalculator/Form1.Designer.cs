@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -444,7 +445,7 @@
             // 
             // equal
             // 
-            this.equal.BackColor = System.Drawing.Color.White;
+            this.equal.BackColor = System.Drawing.Color.Tan;
             this.equal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equal.Location = new System.Drawing.Point(210, 431);
             this.equal.Name = "equal";
@@ -507,14 +508,14 @@
             this.equation.Location = new System.Drawing.Point(12, 28);
             this.equation.Name = "equation";
             this.equation.Size = new System.Drawing.Size(258, 17);
-            this.equation.TabIndex = 26;
+            this.equation.TabIndex = 2;
             this.equation.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(278, 499);
             this.Controls.Add(this.equation);
             this.Controls.Add(this.equal);
@@ -544,11 +545,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);

@@ -34,25 +34,29 @@ namespace WindowsCalculator
             }            
 
             operation_pressed = false;
+
             Button b = (Button)sender;
 
             if (b.Text == ".")
             {
                 if (!result.Text.Contains("."))
                 {
-                    result.Text = result.Text + b.Text;
-                }
+                    result.Text += b.Text;
+                }                
             }
             else
             {
-                result.Text = result.Text + b.Text;
+                result.Text += b.Text;
             }
-           
+
+            equation.Focus();
+
         }
 
         private void button5_Click(object sender, EventArgs e) // "CE" Button
         {
             result.Text = "0";
+            equation.Focus();
         }
 
         private void operator_Click(object sender, EventArgs e) //Clicking Operators
@@ -91,6 +95,8 @@ namespace WindowsCalculator
                 operation_pressed = true;
                 equation.Text = value + " " + operation;
             }
+
+            equation.Focus();
         }
 
         private void equalButton_Click(object sender, EventArgs e) //Pressing the "=" button executes certain action depending on the operator
@@ -113,7 +119,9 @@ namespace WindowsCalculator
             }
 
             value = Double.Parse(result.Text);
-            operation = "";         
+            operation = "";
+
+            equation.Focus();         
         }
 
         private void button6_Click(object sender, EventArgs e) //"C" button
@@ -121,6 +129,7 @@ namespace WindowsCalculator
             result.Text = "0";
             value = 0;
             equation.Text = "";
+            equation.Focus();
         }
 
         private void button7_Click(object sender, EventArgs e) // "<-" button to clear the last digit typed
@@ -137,6 +146,8 @@ namespace WindowsCalculator
             {
                 result.Text = "0";
             }
+
+            equation.Focus();
         }
 
         private void button_MouseEnter(object sender, EventArgs e) // Changes button colors as mouse enters/leaves button area
@@ -148,7 +159,14 @@ namespace WindowsCalculator
         private void button_MouseLeave(object sender, EventArgs e) // Changes button colors as mouse enters/leaves button area
         {
             Button b = (Button)sender;
-            b.BackColor = Color.White;
+            if (b == equal)
+            {
+                b.BackColor = Color.Tan;
+            }
+            else
+            {
+                b.BackColor = Color.White;
+            }
         }
 
         private void button_MouseDown(object sender, MouseEventArgs e) // Changes color when button is pressed
@@ -165,58 +183,58 @@ namespace WindowsCalculator
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e) // Converting key presses into button "presses"
         {
-            switch (e.KeyChar.ToString())
+            switch (e.KeyChar)
             {
-                case "0":
+                case '0':
                     zero.PerformClick();
                     break;
-                case "1":
+                case '1':
                     one.PerformClick();
                     break;
-                case "2":
+                case '2':
                     two.PerformClick();
                     break;
-                case "3":
+                case '3':
                     three.PerformClick();
                     break;
-                case "4":
+                case '4':
                     four.PerformClick();
                     break;
-                case "5":
+                case '5':
                     five.PerformClick();
                     break;
-                case "6":
+                case '6':
                     six.PerformClick();
                     break;
-                case "7":
+                case '7':
                     seven.PerformClick();
                     break;
-                case "8":
+                case '8':
                     eight.PerformClick();
                     break;
-                case "9":
+                case '9':
                     nine.PerformClick();
                     break;
-                case "+":
+                case '+':
                     add.PerformClick();
                     break;
-                case "-":
+                case '-':
                     sub.PerformClick();
                     break;
-                case "*":
+                case '*':
                     mult.PerformClick();
                     break;
-                case "/":
+                case '/':
                     div.PerformClick();
                     break;
-                case "\x23ce":
+                case ((char)Keys.Enter):
                     equal.PerformClick();
                     break;
-                case "\x1B":
-                    button7.PerformClick();
-                    break;
-                case "\x007F":
+                case ((char)Keys.Delete):
                     button6.PerformClick();
+                    break;
+                case ((char)Keys.Back):
+                    button7.PerformClick();
                     break;
                 default:
                     MessageBox.Show("Invalid Input");
