@@ -72,6 +72,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 60);
             this.button1.TabIndex = 0;
+            this.button1.TabStop = false;
             this.button1.Text = "%";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
@@ -98,6 +99,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 60);
             this.button2.TabIndex = 2;
+            this.button2.TabStop = false;
             this.button2.Text = "√";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.operator_Click);
@@ -114,6 +116,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(60, 60);
             this.button3.TabIndex = 3;
+            this.button3.TabStop = false;
             this.button3.Text = "x²";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.operator_Click);
@@ -131,6 +134,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(60, 60);
             this.button4.TabIndex = 4;
+            this.button4.TabStop = false;
             this.button4.Text = "1/x";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
@@ -146,6 +150,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(60, 60);
             this.button5.TabIndex = 5;
+            this.button5.TabStop = false;
             this.button5.Text = "CE";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -162,6 +167,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(60, 60);
             this.button6.TabIndex = 6;
+            this.button6.TabStop = false;
             this.button6.Text = "C";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -178,6 +184,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(60, 60);
             this.button7.TabIndex = 7;
+            this.button7.TabStop = false;
             this.button7.Text = "←";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -194,6 +201,7 @@
             this.div.Name = "div";
             this.div.Size = new System.Drawing.Size(60, 60);
             this.div.TabIndex = 8;
+            this.div.TabStop = false;
             this.div.Text = "÷";
             this.div.UseVisualStyleBackColor = false;
             this.div.Click += new System.EventHandler(this.operator_Click);
@@ -210,6 +218,7 @@
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(60, 60);
             this.seven.TabIndex = 9;
+            this.seven.TabStop = false;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = false;
             this.seven.Click += new System.EventHandler(this.button_Click);
@@ -226,6 +235,7 @@
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(60, 60);
             this.eight.TabIndex = 10;
+            this.eight.TabStop = false;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = false;
             this.eight.Click += new System.EventHandler(this.button_Click);
@@ -242,6 +252,7 @@
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(60, 60);
             this.nine.TabIndex = 11;
+            this.nine.TabStop = false;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = false;
             this.nine.Click += new System.EventHandler(this.button_Click);
@@ -258,6 +269,7 @@
             this.mult.Name = "mult";
             this.mult.Size = new System.Drawing.Size(60, 60);
             this.mult.TabIndex = 12;
+            this.mult.TabStop = false;
             this.mult.Text = "×";
             this.mult.UseVisualStyleBackColor = false;
             this.mult.Click += new System.EventHandler(this.operator_Click);
@@ -274,6 +286,7 @@
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(60, 60);
             this.four.TabIndex = 13;
+            this.four.TabStop = false;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = false;
             this.four.Click += new System.EventHandler(this.button_Click);
@@ -290,6 +303,7 @@
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(60, 60);
             this.five.TabIndex = 14;
+            this.five.TabStop = false;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = false;
             this.five.Click += new System.EventHandler(this.button_Click);
@@ -306,6 +320,7 @@
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(60, 60);
             this.six.TabIndex = 15;
+            this.six.TabStop = false;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = false;
             this.six.Click += new System.EventHandler(this.button_Click);
@@ -322,6 +337,7 @@
             this.sub.Name = "sub";
             this.sub.Size = new System.Drawing.Size(60, 60);
             this.sub.TabIndex = 16;
+            this.sub.TabStop = false;
             this.sub.Text = "-";
             this.sub.UseVisualStyleBackColor = false;
             this.sub.Click += new System.EventHandler(this.operator_Click);
@@ -338,6 +354,7 @@
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(60, 60);
             this.one.TabIndex = 17;
+            this.one.TabStop = false;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = false;
             this.one.Click += new System.EventHandler(this.button_Click);
@@ -354,6 +371,7 @@
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(60, 60);
             this.two.TabIndex = 18;
+            this.two.TabStop = false;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = false;
             this.two.Click += new System.EventHandler(this.button_Click);
@@ -370,6 +388,7 @@
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(60, 60);
             this.three.TabIndex = 19;
+            this.three.TabStop = false;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = false;
             this.three.Click += new System.EventHandler(this.button_Click);
@@ -386,6 +405,7 @@
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(60, 60);
             this.add.TabIndex = 20;
+            this.add.TabStop = false;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = false;
             this.add.Click += new System.EventHandler(this.operator_Click);
@@ -403,6 +423,7 @@
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(60, 60);
             this.button21.TabIndex = 21;
+            this.button21.TabStop = false;
             this.button21.Text = "+/-";
             this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.button_Click);
@@ -419,6 +440,7 @@
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(60, 60);
             this.zero.TabIndex = 22;
+            this.zero.TabStop = false;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = false;
             this.zero.Click += new System.EventHandler(this.button_Click);
@@ -435,6 +457,7 @@
             this.dec.Name = "dec";
             this.dec.Size = new System.Drawing.Size(60, 60);
             this.dec.TabIndex = 23;
+            this.dec.TabStop = false;
             this.dec.Text = ".";
             this.dec.UseVisualStyleBackColor = false;
             this.dec.Click += new System.EventHandler(this.button_Click);
@@ -451,6 +474,7 @@
             this.equal.Name = "equal";
             this.equal.Size = new System.Drawing.Size(60, 60);
             this.equal.TabIndex = 24;
+            this.equal.TabStop = false;
             this.equal.Text = "=";
             this.equal.UseVisualStyleBackColor = false;
             this.equal.Click += new System.EventHandler(this.equalButton_Click);
@@ -481,7 +505,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -496,7 +520,7 @@
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem1.Text = "About";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
@@ -552,6 +576,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

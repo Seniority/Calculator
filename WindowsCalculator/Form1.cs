@@ -227,11 +227,11 @@ namespace WindowsCalculator
                 case '/':
                     div.PerformClick();
                     break;
+                case '.':
+                    dec.PerformClick();
+                    break;
                 case ((char)Keys.Enter):
                     equal.PerformClick();
-                    break;
-                case ((char)Keys.Delete):
-                    button6.PerformClick();
                     break;
                 case ((char)Keys.Back):
                     button7.PerformClick();
@@ -239,6 +239,14 @@ namespace WindowsCalculator
                 default:
                     MessageBox.Show("Invalid Input");
                     break;
+            }
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e) //special code for the stupid DELETE button that wouldn't work in my switch statements...
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                button6.PerformClick();
             }
         }
 
@@ -265,5 +273,6 @@ namespace WindowsCalculator
             MessageBox.Show(about_message, "Calculator", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        
     }
 }
