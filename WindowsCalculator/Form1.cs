@@ -242,7 +242,7 @@ namespace WindowsCalculator
             }
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e) //special code for the stupid DELETE button that wouldn't work in my switch statements...
+        private void Form1_KeyDown(object sender, KeyEventArgs e) //DELETE key does not work with KeyPress events. Must use KeyDown event
         {
             if (e.KeyCode == Keys.Delete)
             {
