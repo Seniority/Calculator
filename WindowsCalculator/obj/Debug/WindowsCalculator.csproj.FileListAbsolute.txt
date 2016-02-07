@@ -15,3 +15,12 @@ C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\Windows
 C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.Properties.Resources.resources
 C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.csproj.GenerateResource.Cache
 C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.exe
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricBox.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricCircle.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricCone.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricCube.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricCylinder.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricPyramid.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricRectangle.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricSquare.resources
+C:\Users\Licensed user\Desktop\Programming\C# Projects\WindowsCalculator\WindowsCalculator\obj\Debug\WindowsCalculator.GeometricTriangle.resources

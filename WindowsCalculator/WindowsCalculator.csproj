@@ -52,10 +52,91 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeometricBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricBox.Designer.cs">
+      <DependentUpon>GeometricBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricCircle.Designer.cs">
+      <DependentUpon>GeometricCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricCone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricCone.Designer.cs">
+      <DependentUpon>GeometricCone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricCube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricCube.Designer.cs">
+      <DependentUpon>GeometricCube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricCylinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricCylinder.Designer.cs">
+      <DependentUpon>GeometricCylinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricPyramid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricPyramid.Designer.cs">
+      <DependentUpon>GeometricPyramid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricRectangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricRectangle.Designer.cs">
+      <DependentUpon>GeometricRectangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricSquare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricSquare.Designer.cs">
+      <DependentUpon>GeometricSquare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricTriangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeometricTriangle.Designer.cs">
+      <DependentUpon>GeometricTriangle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricBox.resx">
+      <DependentUpon>GeometricBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricCircle.resx">
+      <DependentUpon>GeometricCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricCone.resx">
+      <DependentUpon>GeometricCone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricCube.resx">
+      <DependentUpon>GeometricCube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricCylinder.resx">
+      <DependentUpon>GeometricCylinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricPyramid.resx">
+      <DependentUpon>GeometricPyramid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricRectangle.resx">
+      <DependentUpon>GeometricRectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricSquare.resx">
+      <DependentUpon>GeometricSquare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometricTriangle.resx">
+      <DependentUpon>GeometricTriangle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

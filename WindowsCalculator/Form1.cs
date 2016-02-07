@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,7 +29,7 @@ namespace WindowsCalculator
 
         private void button_Click(object sender, EventArgs e)
         {
-            if ((result.Text == "0") || (operation_pressed) || (Convert.ToDouble(result.Text) == value))
+            if ((result.Text == "0") || (operation_pressed) || (result.Text != "." && Convert.ToDouble(result.Text) == value))
             {
                 result.Clear();
             }            
@@ -53,15 +54,15 @@ namespace WindowsCalculator
 
         }
 
-        private void button5_Click(object sender, EventArgs e) // "CE" Button
-        {
-            result.Text = "0";
-            equation.Focus();
-        }
-
-        private void operator_Click(object sender, EventArgs e) //Clicking Operators
+        /*----------------------------------------- Clicking Operators -----------------------------------------*/
+        private void operator_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
+            if (result.Text == ".")
+            {
+                value = 0;
+                result.Text = "0";
+            }
 
             if (value != 0)
             {
@@ -124,11 +125,18 @@ namespace WindowsCalculator
             equation.Focus();         
         }
 
+        /*----------------------------------------- Text Editing Buttons -----------------------------------------*/
         private void button6_Click(object sender, EventArgs e) //"C" button
         {
             result.Text = "0";
             value = 0;
             equation.Text = "";
+            equation.Focus();
+        }
+
+        private void button5_Click(object sender, EventArgs e) // "CE" Button
+        {
+            result.Text = "0";
             equation.Focus();
         }
 
@@ -139,7 +147,7 @@ namespace WindowsCalculator
             result.Text = "";
             for (int i = 0; i < len - 1; i++)
             {
-                result.Text = result.Text + Convert.ToString(str[i]);
+                result.Text = result.Text + str[i];
             }
 
             if ((result.Text == "") || (result.Text == "-"))
@@ -150,13 +158,14 @@ namespace WindowsCalculator
             equation.Focus();
         }
 
-        private void button_MouseEnter(object sender, EventArgs e) // Changes button colors as mouse enters/leaves button area
+        /*----------------------------------------- Form and Button Colors -----------------------------------------*/
+        private void button_MouseEnter(object sender, EventArgs e) 
         {
             Button b = (Button)sender;
             b.BackColor = SystemColors.AppWorkspace;
         }
 
-        private void button_MouseLeave(object sender, EventArgs e) // Changes button colors as mouse enters/leaves button area
+        private void button_MouseLeave(object sender, EventArgs e) 
         {
             Button b = (Button)sender;
             if (b == equal)
@@ -169,19 +178,20 @@ namespace WindowsCalculator
             }
         }
 
-        private void button_MouseDown(object sender, MouseEventArgs e) // Changes color when button is pressed
+        private void button_MouseDown(object sender, MouseEventArgs e) 
         {
             Button b = (Button)sender;
             b.BackColor = SystemColors.ControlDarkDark;
         }
 
-        private void button_MouseUp(object sender, MouseEventArgs e) // Changes color when button is pressed
+        private void button_MouseUp(object sender, MouseEventArgs e) 
         {
             Button b = (Button)sender;
             b.BackColor = SystemColors.AppWorkspace;
         }
 
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e) // Converting key presses into button "presses"
+        /*---------------------------------- Converting key presses into button "presses" ----------------------------------*/
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
             switch (e.KeyChar)
             {
@@ -242,7 +252,7 @@ namespace WindowsCalculator
             }
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e) //DELETE key does not work with KeyPress events. Must use KeyDown event
+        private void Form1_KeyDown(object sender, KeyEventArgs e) //DELETE key does not work with KeyPress events. Must use KeyDown event.
         {
             if (e.KeyCode == Keys.Delete)
             {
@@ -250,6 +260,7 @@ namespace WindowsCalculator
             }
         }
 
+        /*------------------------------------- MenuStrip Items -------------------------------------*/
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -273,6 +284,5 @@ namespace WindowsCalculator
             MessageBox.Show(about_message, "Calculator", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        
-    }
-}
+    }//end Form1: Form class
+}//end namespace
