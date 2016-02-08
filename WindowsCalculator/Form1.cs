@@ -29,10 +29,20 @@ namespace WindowsCalculator
 
         private void button_Click(object sender, EventArgs e)
         {
-            if ((result.Text == "0") || (operation_pressed) || (result.Text != "." && Convert.ToDouble(result.Text) == value))
+           /* if ((result.Text == "0" && (!result.Text.Contains("."))) || (operation_pressed) || (result.Text != "." && Convert.ToDouble(result.Text) == value))
+            {
+                result.Text = "";
+            }         */   
+
+            if (result.Text == "0")
             {
                 result.Clear();
-            }            
+            }
+
+            if (operation_pressed)
+            {
+                result.Clear();
+            }
 
             operation_pressed = false;
 
@@ -51,16 +61,15 @@ namespace WindowsCalculator
             }
 
             equation.Focus();
-
         }
 
         /*----------------------------------------- Clicking Operators -----------------------------------------*/
         private void operator_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
+            
             if (result.Text == ".")
             {
-                value = 0;
                 result.Text = "0";
             }
 
@@ -103,6 +112,12 @@ namespace WindowsCalculator
         private void equalButton_Click(object sender, EventArgs e) //Pressing the "=" button executes certain action depending on the operator
         {
             equation.Text = "";
+
+            if (result.Text == ".") 
+            {                       
+                result.Text = "0";  
+            }                       
+
             switch (operation)
             {
                 case "+":
@@ -121,16 +136,16 @@ namespace WindowsCalculator
 
             value = Double.Parse(result.Text);
             operation = "";
-
             equation.Focus();         
         }
 
         /*----------------------------------------- Text Editing Buttons -----------------------------------------*/
-        private void button6_Click(object sender, EventArgs e) //"C" button
+        private void button6_Click(object sender, EventArgs e) // "C" button
         {
             result.Text = "0";
             value = 0;
             equation.Text = "";
+            operation_pressed = false;
             equation.Focus();
         }
 
@@ -140,7 +155,7 @@ namespace WindowsCalculator
             equation.Focus();
         }
 
-        private void button7_Click(object sender, EventArgs e) // "<-" button to clear the last digit typed
+        private void button7_Click(object sender, EventArgs e) // "←" Button
         {
             string str = result.Text;
             int len = str.Length;
@@ -247,7 +262,6 @@ namespace WindowsCalculator
                     button7.PerformClick();
                     break;
                 default:
-                    MessageBox.Show("Invalid Input");
                     break;
             }
         }
