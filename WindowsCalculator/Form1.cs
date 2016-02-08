@@ -34,7 +34,6 @@ namespace WindowsCalculator
             {
                 result.Clear();
             }
-
             if (operation_pressed)
             {
                 result.Clear();
@@ -48,7 +47,7 @@ namespace WindowsCalculator
             {
                 if (!result.Text.Contains("."))
                 {
-                    result.Text += "0" + b.Text;
+                    result.Text += b.Text;
                 }                
             }
             else
@@ -66,7 +65,7 @@ namespace WindowsCalculator
             
             if (result.Text == ".")
             {
-                result.Text = "0.";
+                result.Text = "0";
             }
 
             if (value != 0)
@@ -132,6 +131,7 @@ namespace WindowsCalculator
 
             value = Double.Parse(result.Text);
             operation = "";
+            operation_pressed = true;
             equation.Focus();         
         }
 
