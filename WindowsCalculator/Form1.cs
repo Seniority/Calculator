@@ -27,13 +27,9 @@ namespace WindowsCalculator
             InitializeComponent();
         }
 
+        /*------------------------- Button events for numbers 0-9 and for decimal point -------------------------*/
         private void button_Click(object sender, EventArgs e)
         {
-           /* if ((result.Text == "0" && (!result.Text.Contains("."))) || (operation_pressed) || (result.Text != "." && Convert.ToDouble(result.Text) == value))
-            {
-                result.Text = "";
-            }         */   
-
             if (result.Text == "0")
             {
                 result.Clear();
@@ -52,7 +48,7 @@ namespace WindowsCalculator
             {
                 if (!result.Text.Contains("."))
                 {
-                    result.Text += b.Text;
+                    result.Text += "0" + b.Text;
                 }                
             }
             else
@@ -70,7 +66,7 @@ namespace WindowsCalculator
             
             if (result.Text == ".")
             {
-                result.Text = "0";
+                result.Text = "0.";
             }
 
             if (value != 0)
@@ -173,7 +169,7 @@ namespace WindowsCalculator
             equation.Focus();
         }
 
-        /*----------------------------------------- Form and Button Colors -----------------------------------------*/
+        /*---------------------------------------- Form and Button Colors ----------------------------------------*/
         private void button_MouseEnter(object sender, EventArgs e) 
         {
             Button b = (Button)sender;
