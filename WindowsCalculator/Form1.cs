@@ -271,7 +271,7 @@ namespace WindowsCalculator
         }
 
         /*------------------------------------- MenuStrip Items -------------------------------------*/
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menustripExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

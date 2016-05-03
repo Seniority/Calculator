@@ -56,9 +56,9 @@
             this.equal = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.standardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripMode = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripStandard = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripGeometric = new System.Windows.Forms.ToolStripMenuItem();
             this.squareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rectangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.triangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,17 +68,18 @@
             this.coneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pyramidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cylinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.graphingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.programmingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lengthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.weightAndMassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.temperatureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.speedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripGraphing = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripProgrammer = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripExit = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.equation = new System.Windows.Forms.Label();
+            this.menustripConversion = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripLength = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripWeightMass = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripTemperature = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripSpeed = new System.Windows.Forms.ToolStripMenuItem();
+            this.menustripTime = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -516,39 +517,35 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modeToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.menustripMode,
+            this.menustripExit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // modeToolStripMenuItem
+            // menustripMode
             // 
-            this.modeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.standardToolStripMenuItem,
-            this.areaToolStripMenuItem,
-            this.graphingToolStripMenuItem,
-            this.programmingToolStripMenuItem,
-            this.lengthToolStripMenuItem,
-            this.weightAndMassToolStripMenuItem,
-            this.temperatureToolStripMenuItem,
-            this.speedToolStripMenuItem,
-            this.timeToolStripMenuItem});
-            this.modeToolStripMenuItem.Name = "modeToolStripMenuItem";
-            this.modeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.modeToolStripMenuItem.Text = "Mode";
+            this.menustripMode.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menustripStandard,
+            this.menustripGeometric,
+            this.menustripGraphing,
+            this.menustripProgrammer,
+            this.menustripConversion});
+            this.menustripMode.Name = "menustripMode";
+            this.menustripMode.Size = new System.Drawing.Size(152, 22);
+            this.menustripMode.Text = "Mode";
             // 
-            // standardToolStripMenuItem
+            // menustripStandard
             // 
-            this.standardToolStripMenuItem.Checked = true;
-            this.standardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.standardToolStripMenuItem.Text = "Standard";
+            this.menustripStandard.Checked = true;
+            this.menustripStandard.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.menustripStandard.Name = "menustripStandard";
+            this.menustripStandard.Size = new System.Drawing.Size(152, 22);
+            this.menustripStandard.Text = "Standard";
             // 
-            // areaToolStripMenuItem
+            // menustripGeometric
             // 
-            this.areaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menustripGeometric.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.squareToolStripMenuItem,
             this.rectangleToolStripMenuItem,
             this.triangleToolStripMenuItem,
@@ -558,112 +555,82 @@
             this.coneToolStripMenuItem,
             this.pyramidToolStripMenuItem,
             this.cylinderToolStripMenuItem});
-            this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
-            this.areaToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.areaToolStripMenuItem.Text = "Geometric";
+            this.menustripGeometric.Name = "menustripGeometric";
+            this.menustripGeometric.Size = new System.Drawing.Size(152, 22);
+            this.menustripGeometric.Text = "Geometric";
             // 
             // squareToolStripMenuItem
             // 
             this.squareToolStripMenuItem.Name = "squareToolStripMenuItem";
-            this.squareToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.squareToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.squareToolStripMenuItem.Text = "Square";
             // 
             // rectangleToolStripMenuItem
             // 
             this.rectangleToolStripMenuItem.Name = "rectangleToolStripMenuItem";
-            this.rectangleToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.rectangleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rectangleToolStripMenuItem.Text = "Rectangle";
             // 
             // triangleToolStripMenuItem
             // 
             this.triangleToolStripMenuItem.Name = "triangleToolStripMenuItem";
-            this.triangleToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.triangleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.triangleToolStripMenuItem.Text = "Triangle";
             // 
             // circleToolStripMenuItem
             // 
             this.circleToolStripMenuItem.Name = "circleToolStripMenuItem";
-            this.circleToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.circleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.circleToolStripMenuItem.Text = "Circle";
             // 
             // cubeToolStripMenuItem
             // 
             this.cubeToolStripMenuItem.Name = "cubeToolStripMenuItem";
-            this.cubeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.cubeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cubeToolStripMenuItem.Text = "Cube";
             // 
             // boxToolStripMenuItem
             // 
             this.boxToolStripMenuItem.Name = "boxToolStripMenuItem";
-            this.boxToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.boxToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.boxToolStripMenuItem.Text = "Box";
             // 
             // coneToolStripMenuItem
             // 
             this.coneToolStripMenuItem.Name = "coneToolStripMenuItem";
-            this.coneToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.coneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.coneToolStripMenuItem.Text = "Cone";
             // 
             // pyramidToolStripMenuItem
             // 
             this.pyramidToolStripMenuItem.Name = "pyramidToolStripMenuItem";
-            this.pyramidToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.pyramidToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pyramidToolStripMenuItem.Text = "Pyramid";
             // 
             // cylinderToolStripMenuItem
             // 
             this.cylinderToolStripMenuItem.Name = "cylinderToolStripMenuItem";
-            this.cylinderToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.cylinderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cylinderToolStripMenuItem.Text = "Cylinder";
             // 
-            // graphingToolStripMenuItem
+            // menustripGraphing
             // 
-            this.graphingToolStripMenuItem.Name = "graphingToolStripMenuItem";
-            this.graphingToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.graphingToolStripMenuItem.Text = "Graphing";
+            this.menustripGraphing.Name = "menustripGraphing";
+            this.menustripGraphing.Size = new System.Drawing.Size(152, 22);
+            this.menustripGraphing.Text = "Graphing";
             // 
-            // programmingToolStripMenuItem
+            // menustripProgrammer
             // 
-            this.programmingToolStripMenuItem.Name = "programmingToolStripMenuItem";
-            this.programmingToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.programmingToolStripMenuItem.Text = "Programmer";
+            this.menustripProgrammer.Name = "menustripProgrammer";
+            this.menustripProgrammer.Size = new System.Drawing.Size(152, 22);
+            this.menustripProgrammer.Text = "Programmer";
             // 
-            // lengthToolStripMenuItem
+            // menustripExit
             // 
-            this.lengthToolStripMenuItem.Name = "lengthToolStripMenuItem";
-            this.lengthToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.lengthToolStripMenuItem.Text = "Length";
-            // 
-            // weightAndMassToolStripMenuItem
-            // 
-            this.weightAndMassToolStripMenuItem.Name = "weightAndMassToolStripMenuItem";
-            this.weightAndMassToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.weightAndMassToolStripMenuItem.Text = "Weight and Mass";
-            // 
-            // temperatureToolStripMenuItem
-            // 
-            this.temperatureToolStripMenuItem.Name = "temperatureToolStripMenuItem";
-            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.temperatureToolStripMenuItem.Text = "Temperature";
-            // 
-            // speedToolStripMenuItem
-            // 
-            this.speedToolStripMenuItem.Name = "speedToolStripMenuItem";
-            this.speedToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.speedToolStripMenuItem.Text = "Speed";
-            // 
-            // timeToolStripMenuItem
-            // 
-            this.timeToolStripMenuItem.Name = "timeToolStripMenuItem";
-            this.timeToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.timeToolStripMenuItem.Text = "Time";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.menustripExit.Name = "menustripExit";
+            this.menustripExit.Size = new System.Drawing.Size(152, 22);
+            this.menustripExit.Text = "Exit";
+            this.menustripExit.Click += new System.EventHandler(this.menustripExit_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -690,6 +657,48 @@
             this.equation.Size = new System.Drawing.Size(258, 17);
             this.equation.TabIndex = 2;
             this.equation.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // menustripConversion
+            // 
+            this.menustripConversion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menustripLength,
+            this.menustripWeightMass,
+            this.menustripTemperature,
+            this.menustripSpeed,
+            this.menustripTime});
+            this.menustripConversion.Name = "menustripConversion";
+            this.menustripConversion.Size = new System.Drawing.Size(152, 22);
+            this.menustripConversion.Text = "Conversion";
+            // 
+            // menustripLength
+            // 
+            this.menustripLength.Name = "menustripLength";
+            this.menustripLength.Size = new System.Drawing.Size(165, 22);
+            this.menustripLength.Text = "Length";
+            // 
+            // menustripWeightMass
+            // 
+            this.menustripWeightMass.Name = "menustripWeightMass";
+            this.menustripWeightMass.Size = new System.Drawing.Size(165, 22);
+            this.menustripWeightMass.Text = "Weight and Mass";
+            // 
+            // menustripTemperature
+            // 
+            this.menustripTemperature.Name = "menustripTemperature";
+            this.menustripTemperature.Size = new System.Drawing.Size(165, 22);
+            this.menustripTemperature.Text = "Temperature";
+            // 
+            // menustripSpeed
+            // 
+            this.menustripSpeed.Name = "menustripSpeed";
+            this.menustripSpeed.Size = new System.Drawing.Size(165, 22);
+            this.menustripSpeed.Text = "Speed";
+            // 
+            // menustripTime
+            // 
+            this.menustripTime.Name = "menustripTime";
+            this.menustripTime.Size = new System.Drawing.Size(165, 22);
+            this.menustripTime.Text = "Time";
             // 
             // Form1
             // 
@@ -772,27 +781,28 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label equation;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menustripExit;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem modeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem graphingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem programmingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem areaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menustripMode;
+        private System.Windows.Forms.ToolStripMenuItem menustripGraphing;
+        private System.Windows.Forms.ToolStripMenuItem menustripProgrammer;
+        private System.Windows.Forms.ToolStripMenuItem menustripGeometric;
         private System.Windows.Forms.ToolStripMenuItem squareToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rectangleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem triangleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem circleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lengthToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem weightAndMassToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem temperatureToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem speedToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem timeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem standardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menustripStandard;
         private System.Windows.Forms.ToolStripMenuItem cylinderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pyramidToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem coneToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem boxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cubeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menustripConversion;
+        private System.Windows.Forms.ToolStripMenuItem menustripLength;
+        private System.Windows.Forms.ToolStripMenuItem menustripWeightMass;
+        private System.Windows.Forms.ToolStripMenuItem menustripTemperature;
+        private System.Windows.Forms.ToolStripMenuItem menustripSpeed;
+        private System.Windows.Forms.ToolStripMenuItem menustripTime;
     }
 }
 
